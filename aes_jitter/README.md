@@ -4,7 +4,7 @@ The encryption used is AES-128 with random jittering in between the subbyte func
 To eliminate jittering, the parts of trace belongings to subbytes are extracted before performing CPA. The extraction is performed using numpy
 correlate function. 
 
-The following picture shows part of 2 traces.
+The following picture shows part of 2 traces. As random jitter are inserted during the sub bytes process, shifts are observed.
 ![img1](lotjitter_trace.png)
 
 The following picture shows the extract of 2 traces.
